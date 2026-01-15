@@ -1,14 +1,18 @@
 #!/usr/bin/make
 
 .SUFFIXES:
-.SUFFIXES:	.md .Rmd
+.SUFFIXES:	.md
 
-default: index.html
+TITLE := What are Nuclear Cross-sections?
 
-index.html: README.Rmd
+default: public/index.html
+
+public/index.html: README.md article.css
 	@mkdir -p public
-	@R --quiet --slave --vanilla --file=make.R --args $@
-	@mv index.html public/index.html
+	@pandoc --from=gfm --to=html5 --embed-resources --standalone \
+		--css=article.css \
+		--metadata title="$(TITLE)" \
+		--output=$@ README.md
 
 .PHONY: clean
 clean:
