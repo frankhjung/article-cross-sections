@@ -4,16 +4,14 @@ author: "frankhjung@linux.com"
 date: "2026-01-15"
 ---
 
-# What are Nuclear Cross Sections?
-
-Cross-sections were frequently mentioned in the [Superheavy: Making and Breaking
+_Cross-sections were frequently mentioned in the [Superheavy: Making and Breaking
 the Periodic Table by Kit
 Chapman](https://www.goodreads.com/book/show/40653150-superheavy). I felt the
 explanation of what a cross-section was could have been better. So I put
 together this summary explaining what they mean in the context of creating new
-elements.
+elements._
 
-## Cross Sections
+## Nuclear Cross Sections
 
 In nuclear physics, a cross-section is a measure of the probability that a
 specific nuclear reaction (like fusion) will occur. When scientists say the
